@@ -1,10 +1,12 @@
 .banner{
     background-color: $clr-primary;
     padding-top: 10rem;
+    position: relative;
     .container{
         display: grid;
         grid-template-columns: 1fr;
         width: 100%;
+        height: 95vh;
         
     }
     &__wrapper{
@@ -61,36 +63,30 @@
     }
  }
  &__video{
-    display: grid;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    left:0;
+    
+    
 
  video{
-    
-   @include imgFit(100%, 400px)
-   
-   
-   
-
- }
- }
+   @include imgFit(100%, 200px);
+   position: absolute;
+    left:0;
+    bottom: 0;
+    }
+}
  
  
  @include mediaQuery($break-lg){
-    
-    .banner{
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        align-items: center;
+        &__wrapper{
+       @include gridEven(2,0rem);
+        }
         &__btn{
             display: flex;
             flex-direction: row;
-            .container{
-                display: flex;
-              flex-direction: column;
-            }
+           
         }
         &__text{
             display: flex;
@@ -110,8 +106,8 @@
             display: block;
         }
         &__video{
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
          video{
            
             align-items: center;
@@ -121,7 +117,7 @@
          
          }
         } 
-    } 
+    
    }
 }
 
