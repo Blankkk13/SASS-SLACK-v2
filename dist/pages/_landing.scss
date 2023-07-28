@@ -112,13 +112,12 @@
            
             align-items: center;
             margin-left:10rem;
-            
-           @include imgFit(100%, 400px)
          
+           @include imgFit(50%, 400px)
          }
         } 
     
-   }
+   } 
 }
 
  
@@ -200,27 +199,38 @@
         margin-top:2rem;
         transform: translateX(-3);
         position: relative;
+      
      
     }
     @include mediaQuery($break-lg){
-        .wrapper{
-            display: flex;
-           flex-direction: column;
+        &__wrapper{
+            background-color: $clr-fwhite;
+            
+        }
+        &__item{
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+           align-items: center;
+            
         }
         video{
+            
             @include imgFit(100%,90%);
             width: 60rem;;
     }
     &__item__text{
+        
 h1{
+    
     font-size: 4rem;
+    max-width: 35rem;
 }
 p{
     font-size: 2rem;
-    max-width: 54rem;
+    max-width: 55rem;
   
 }
 }
     }
+    }
 
-}

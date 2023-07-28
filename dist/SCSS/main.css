@@ -970,7 +970,7 @@ body {
   .banner__video video {
     align-items: center;
     margin-left: 10rem;
-    width: 100%;
+    width: 50%;
     height: 400px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1047,9 +1047,13 @@ body {
   position: relative;
 }
 @media screen and (min-width: 940px) {
-  .slack .wrapper {
-    display: flex;
-    flex-direction: column;
+  .slack__wrapper {
+    background-color: hsl(34, 42%, 93%);
+  }
+  .slack__item {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
   }
   .slack video {
     width: 100%;
@@ -1060,9 +1064,10 @@ body {
   }
   .slack__item__text h1 {
     font-size: 4rem;
+    max-width: 35rem;
   }
   .slack__item__text p {
     font-size: 2rem;
-    max-width: 54rem;
+    max-width: 55rem;
   }
 }/*# sourceMappingURL=main.css.map */
