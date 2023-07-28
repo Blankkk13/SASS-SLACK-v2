@@ -13,7 +13,7 @@ drop.forEach((link) => {
  });
 });
 
-const kamote = document.querySelector(".header");
+const kamoteq = document.querySelector(".header");
 window.addEventListener("scroll", () => {
  console.log(window.scrollY);
  if (window.scrollY >= 500) {
@@ -23,9 +23,16 @@ window.addEventListener("scroll", () => {
  }
 });
 
+
+
 const modal = document.querySelector('.modal');
 const btnRegion = document.querySelector('.region');
 const btnClose = document.querySelector('#closeModal');
+
+const closeModalHandler = () =>{
+    modal.classList.toggle('active');
+    btnRegion.classList.toggle('active')
+}
 
 btnRegion.addEventListener('click',()=>{
     btnRegion.classList.toggle('active')
