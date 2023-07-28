@@ -206,12 +206,13 @@
         &__wrapper{
             background-color: $clr-fwhite;
             
+            
         }
         &__item{
             display: grid;
             grid-template-columns: 2fr 2fr;
            align-items: center;
-            
+           justify-content: center;
         }
         video{
             
@@ -234,3 +235,20 @@ p{
     }
     }
 
+.teams{
+&__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    h1{
+        max-width: 35rem;
+        margin-bottom: 2rem;
+    }
+    p{
+       max-width: 38rem; 
+    }
+}
+
+}
