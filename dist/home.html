@@ -2,14 +2,18 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SLACK-HOME</title>
   <link rel="stylesheet" href="./SCSS/main.css">
   <script src="https://kit.fontawesome.com/1541772982.js" crossorigin="anonymous"></script>
 </head>
+<div id="overlay">
 
+</div>
 <body>
+
 
   <header class="header">
     <div class="container">
@@ -132,6 +136,9 @@
           </div>
         </div>
         <div class="slack__item">
+          <div class="section__item__vid">
+            <video src="./img/kamote2.webm" autoplay loop></video>
+          </div>
           
           <div class="slack__item__text">
             <h1>
@@ -142,9 +149,7 @@
             </p>
           <a href="">Learn more about flexible communication<i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="section__item__vid">
-          <video src="./img/kamote2.webm" autoplay loop></video>
-        </div>
+       
         </div>
         <div class="slack__item">
           <div class="section__item__vid">
@@ -173,9 +178,10 @@
           <div class="teams__text">
             <h1>Teams large and small rely on Slack</h1>
             <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
+            <div class="teams__button">
             <a href="" class="btn bg--primary">MEET SLACK FOR Enterprise</a>
             <a href="" class="btn bg--light">TALK TO SALES</a>
-
+              </div>
 
           </div>
         </div>
@@ -183,6 +189,72 @@
     </div>
   </div>
 </section>
+
+
+<section class="work">
+  <div class="container">
+    <div class="work__wrapper">
+      <h3>
+        Take a deeper dive into a new way to work
+      </h3>
+      <div class="slider">
+        <div class="card">
+        <div class="slider__item">
+          <img src="../dist/img/promo-state-of-work.jpg" alt="">
+          <div class="slider__content">
+            <h5>Report</h5>
+            <h3>The State of Work 2023</h3>
+            <div class="slider__actions">
+              <a href="#">Read more</a>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="card">
+        <div class="slider__item">
+          <img src="../dist/img/wtny-resource-tile.jpg" alt="">
+          <div class="slider__content">
+            <h5>On-demand</h5>
+            <h3>Big things are launching. Relive the highlights of World Tour New York!</h3>
+            <div class="slider__actions">
+              <a href="#">WATCH NOW</a>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="slider__item">
+          <img src="../dist/img/promo-open-ai.jpg" alt="">
+          <div class="slider__content">
+            <h5>Customer Story</h5>
+            <h3>The next big thing? AI for everyone.</h3>
+            <div class="slider__actions">
+              <a href="#">READ MORE</a>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="slider__item">
+          <img src="./img/promo-boost-productivity.jpg" alt="">
+          <div class="slider__content">
+            <h5>Webinar</h5>
+            <h3>Top Slack tips to boost promo-boost-productivity</h3>
+            <div class="slider__actions">
+              <a href="#">WATCH NOT</a>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <footer class="footer">
   <div class="container">
@@ -197,10 +269,44 @@
        <li><a href="#">Contact Us</a></li>
        <li>
         <a class="region" href="javascrip:void(0)">Change Region</a>
-        <div class="modal"onfocusout=>
+        <div class="modal">
            <button id="closeModal">X</button>
-          <h2>Change Region</h2>
-         
+          <div class="region__text">
+           <h1>Change Region</h1>
+          <p>Selecting a different region will change the language and content of slack.com.</p>
+
+        </div>
+          <div class="region__country">
+
+          <h2>AMERICAS</h2>
+
+          <a href="">Latinoamérica (español)</a>
+          <a href="">Brasil (português)</a>
+          <a href="">United States (English)</a>
+          
+        </div>
+          <div class="region__country">
+
+          <h2>EUROPE</h2>
+
+          <a href="">Deutshland (Deutsch)</a>
+          <a href="">Espana (espanol)</a>
+          <a href="">France (Francais)</a>
+          <a href="">Italia (italiano)</a>
+          <a href="">United Kingdom (English)</a>
+          
+        </div>
+          <div class="region__country">
+
+                 <h2>ASIA PACIFIC</h2>
+          <a href="">简体中文</a>
+          <a href="">繁體中文</a>
+          <a href="">India (English)</a>
+          <a href="">日本 (日本語)</a>
+          <a href="">대한민국 (한국어)</a>
+          
+        </div>
+        
         </div>
       </li>
     </ul>
@@ -211,6 +317,8 @@
     </div>
   </div>
 </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 
 
   <script src="./script/script.js"></script>

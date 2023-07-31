@@ -29,17 +29,44 @@ const modal = document.querySelector('.modal');
 const btnRegion = document.querySelector('.region');
 const btnClose = document.querySelector('#closeModal');
 
+const openModalHandler = () =>{
+    modal.classList.toggle('active');
+   
+    overlay.classList.toggle('active')
+}
 const closeModalHandler = () =>{
     modal.classList.toggle('active');
-    btnRegion.classList.toggle('active')
+    btnRegion.classList.toggle('active');
+    overlay.classList.toggle('active')
 }
 
-btnRegion.addEventListener('click',()=>{
-    btnRegion.classList.toggle('active')
-    btnRegion.nextElementSibling.classList.toggle('active')
+// btnRegion.addEventListener('click',()=>{
+//     btnRegion.classList.toggle('active')
+//     btnRegion.nextElementSibling.classList.toggle('active')
+// })
+
+// btnClose.addEventListener('click',()=>{
+//     modal.classList.toggle('active');
+//     btnRegion.classList.toggle('active')
+// })
+// console.log(overlay);
+
+
+var slider = tns({
+    container: '.slider',
+    items: 1,
+    slideBy: 'page',
+    autoplay: true,
+    mouseDrag: true,
+    navPosition: 'bottom',
+    responsive: {
+        900: {
+            items: 4
+        }
+    }
 })
 
-btnClose.addEventListener('click',()=>{
-    modal.classList.toggle('active');
-    btnRegion.classList.toggle('active')
-})
+
+btnClose.addEventListener('click', closeModalHandler);
+btnRegion.addEventListener('click', openModalHandler);
+// window.addEventListener('click', closeModalHandler);
