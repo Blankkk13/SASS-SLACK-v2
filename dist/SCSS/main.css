@@ -1171,6 +1171,9 @@ body {
   font-size: 2rem;
   width: 35rem;
 }
+.stories__text h2 {
+  font-size: 1.5rem;
+}
 
 .work {
   background-color: hsl(34, 42%, 93%);
