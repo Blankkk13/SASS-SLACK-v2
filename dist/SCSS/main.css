@@ -610,6 +610,7 @@ body {
   transition: 2s ease;
 }
 .header__wrapper {
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
