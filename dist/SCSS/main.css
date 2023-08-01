@@ -1056,6 +1056,10 @@ body {
     align-items: center;
     justify-content: center;
   }
+  .slack__item:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
   .slack video {
     width: 100%;
     height: 90%;
@@ -1086,6 +1090,7 @@ body {
 .teams__text p {
   max-width: 40rem;
   font-size: 1.5rem;
+  font-weight: 600;
 }
 .teams__button {
   margin-top: 2rem;
@@ -1094,6 +1099,70 @@ body {
   margin-bottom: 3rem;
   gap: 1rem;
   width: 45rem;
+}
+@media screen and (min-width: 940px) {
+  .teams__text {
+    margin-top: 4rem;
+  }
+  .teams__text h1 {
+    display: flex;
+    max-width: 100rem;
+    font-size: 4rem;
+  }
+  .teams__text p {
+    display: flex;
+    max-width: 100rem;
+    font-size: 2rem;
+  }
+  .teams__button {
+    margin-top: 4rem;
+    flex-direction: row;
+  }
+}
+
+.percentage {
+  padding: 4rem;
+}
+.percentage__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.percentage__text h1 {
+  font-size: 5rem;
+  color: hsl(294, 54%, 27%);
+}
+.percentage__text p {
+  font-size: 1.5rem;
+  width: 20rem;
+}
+@media screen and (min-width: 940px) {
+  .percentage {
+    padding: 8rem;
+  }
+  .percentage__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20rem;
+  }
+  .percentage__item h1 {
+    font-size: 6rem;
+  }
+}
+
+.stories__item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+}
+.stories__item video {
+  border-top-right-radius: 15rem;
+  border-bottom-right-radius: 15rem;
+  width: 90%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .work {
